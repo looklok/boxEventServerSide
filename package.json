@@ -1,0 +1,17 @@
+{
+  "name": "boxevent",
+  "version": "1.0.0",
+  "description": "server side of the box event application",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6"
+  }
+}
