@@ -2,20 +2,14 @@ const mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 const activitySchema = new Schema({
-    time: {
+    dateDebut: {
         type: Date,
     },
-    responsableID : String,
-    nbOrganisateur : Number,
-    organisateurs : [String],
-    titre : String,
-    description : String,
-    departement :{
-        type : String,
-        enum :{
-            values : ['logistic', 'communication', 'design', 'developpement',]
-        }
+    dateFin: {
+        type: Date,
     },
+    titre : String,
+    place : String,
 
 })
 const model =  mongoose.model('activity', activitySchema);
